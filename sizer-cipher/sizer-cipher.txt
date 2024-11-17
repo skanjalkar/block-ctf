@@ -1,0 +1,41 @@
+052c01be88c7f52cbdc3c084c7b1313828034370034dd13778342dff
+052c01be88c1752cbdc3c084c7b1313828034370034dd13778342dff
+
+flag{
+g{ -> 01be
+0fff
+
+052c01be00000000000000000000000000000000000000000000000000003f
+
+052c01be88c7f52cbdc3c084c7b1313828034370034dd13
+
+Imademyownencryptionschemecheckitout
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
+aaaaaaaaaaaaaaaaaaaaaaaaaaaTTTd
+778342dff
+sizercipher100
+aaaaaaaaaaaaa
+
+14b006f922191110883c7111d74d3f
+14b006fac2191117083c7111d74d3f
+
+flag{ImF1ll3dWithSte4kandCann0tD4nc3}
+
+}} -> 0fff
+}}} -> 0_____
+-> ever 2 characters only need 3 bytes to be represented. so search in 3 bytes to decrypt it.
+
+a b c d e f g h i j k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z
+0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+
+A  B  C  D  E  F  G  H   I J  K  L  M  N  O  P  Q  R  S  T  U  V  W   X  Y Z
+26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51
+
+
+0  1  2  3  4  5  6  7  8  9
+52 53 54 55 56 57 58 59 60 61
+
+{  }
+
+62 63
