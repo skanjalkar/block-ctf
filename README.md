@@ -47,8 +47,16 @@ Once I have p and q, I can compute the private key (d), which I then use to decr
 
 This was a llvm given file which I had to reverse engineer. I just did llvm nothin_but_stringz.o and got the flag.
 
-5. Echo: (Aish Tapade)
+5. Echo: 
 
-6. Only Ws: (Aish Tapade)
+This was a simple buffer overflow challenge where the program uses gets which does not do bounds checking which makes overwriting the return address trivial. My exploitation strategy was to fill the 256 byte buffer, account 8 bytes for rbp and then overwrite the return address with the address of `print_flag`. 
+
+6. Only Ws: 
+
+This challenge had seccomp restrictions allowing us to only use `exit` and `write` syscalls. The program outputs flag's address, so my exploitation strategy was to recv the provided address and then use write syscall to print out the flag onto the screen (write(1, flag_address, 100))
+
+7. Echo 2:
+
+This challenge has a stack canary protection to protect overwriting return address, however, on further examination, I noticed that the the code prints out the buffer content using `print(echo_buffer)` hinting towards a format string vulnerability. In the first payload, I leaked the canary value using the fmtstr vulnerbaility and then created a second payload to fill the buffer, then insert the leaked canary value, 8 bytes for RBP and then substituted print_flag's address to the return address. 
 
 Acknowledgment: Aishwarya Tapade for being my teammate during this ctf. We learnt a lot!
